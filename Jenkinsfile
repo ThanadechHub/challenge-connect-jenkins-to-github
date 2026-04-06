@@ -20,7 +20,7 @@ pipeline {
 
                 // this step archives the report
                 archiveArtifacts allowEmptyArchive: true,
-                    artifacts: 'gundam.txt',
+                    artifacts: '*.txt',
                     fingerprint: true,
                     onlyIfSuccessful: true
             }
